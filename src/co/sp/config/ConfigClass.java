@@ -32,7 +32,8 @@ public class ConfigClass implements WebApplicationInitializer{
 		
 		AnnotationConfigWebApplicationContext root = new AnnotationConfigWebApplicationContext();
 		root.register(RootContext.class);
-	
+		
+		//servlet app, root context 안의 bean 객체를 쓸 수 있게 해줌 getbean 역활
 		ContextLoaderListener listener = new ContextLoaderListener(root);
 		ser.addListener(listener);
 		
