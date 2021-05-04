@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<a href="java1">java1</a>
-<a href="in">in</a>
+${data.da1 }
+${data.da2 }
 </body>
 </html>
